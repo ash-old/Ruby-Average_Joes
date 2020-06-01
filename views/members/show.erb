@@ -1,0 +1,14 @@
+<p>First Name: <%= @member.first_name %></p>
+<p>Last Name: <%= @member.last_name %></p>
+<p>Email: <%= @member.email %></p>
+
+<form class="" action="/average_joes/<%=@member.id%>/delete" method="post">
+  <input type="submit" name="" value="Delete Member">
+</form>
+<!-- <form class="" action="/average_joes/<%=@member.id%>/edit" method="post">
+  <input type="submit" name="" value="Edit Member">
+</form> -->
+<a href="/average_joes/<%=@member.id%>/edit">Edit Member</a>
+
+
+<hr/>

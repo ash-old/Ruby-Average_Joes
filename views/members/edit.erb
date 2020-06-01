@@ -1,0 +1,13 @@
+<form class="" action="/average_joes/<%= @member.id %>" method="post">
+
+  <label for="first-name">First Name:</label>
+    <input id ="first-name" type="text" name="first_name" value="<%=@member.first_name%>">
+
+  <label for="last_name">Last Name:</label>
+    <input id ="last-name" type="text" name="last_name" value="<%=@member.last_name%>">
+
+  <label for="email">Email:</label>
+    <input id ="email" type="text" name="email" value="<%=@member.email%>">
+
+  <input type="submit" name="" value="Edit Member">
+</form>
