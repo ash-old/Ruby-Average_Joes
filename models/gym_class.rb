@@ -7,7 +7,7 @@ class GymClass
 
 def initialize(options)
   @id = options['id'].to_i if options['id']
-  @gym_class_type = options['gym_class_type']
+  @gym_class_type = options['gym_class_type'].capitalize
   @class_time = options['class_time']
 end
 
@@ -28,6 +28,13 @@ def update()
   sql = "UPDATE gym_classes SET (gym_class_type, class_time) = ($1,$2) WHERE id = $3"
   values = [@gym_class_type, @class_time, @id]
   SqlRunner.run(sql, values)
+end
+
+def members()
+  sql = "SELECT members.* FROM members INNER JOIN bookings ON bookings.member_id = members.id WHERE bookings.gym_class_id = $1"
+  values = [@id]
+  results = SqlRunner.run(sql, values)
+  return results.map { |member| Member.new(member) }
 end
 
 def self.find(id)

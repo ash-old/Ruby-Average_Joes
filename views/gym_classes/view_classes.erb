@@ -1,4 +1,4 @@
-
+<p class="table">Classes:</p>
 <% for gym in @gym_class %>
 
 <p>Gym Class: <%= gym.gym_class_type() %></p>
@@ -7,6 +7,6 @@
 <form class="" action="/average_joes/gym_classes/<%=gym.id%>" method="get">
   <input type="submit" name="" value="View Class">
 </form>
-<hr/>
+<br/>
 
 <%end%>

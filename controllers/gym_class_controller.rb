@@ -3,6 +3,7 @@ require('sinatra/contrib/all')
 require('pry-byebug')
 require_relative('../models/member')
 require_relative('../models/gym_class')
+require_relative('../models/booking')
 also_reload('../models/*')
 
 get '/average_joes/gym_classes/view_classes' do
@@ -19,6 +20,12 @@ get '/average_joes/gym_classes/:id' do
   erb(:"gym_classes/show_class")
 end
 
+get '/average_joes/gym_classes/:id/bookings' do
+  @gym_class = GymClass.find(params[:id])
+  @members = @gym_class.members
+  erb(:"gym_classes/show_bookings")
+end
+
 get '/average_joes/gym_classes/:id/edit_class' do
   @gym_class = GymClass.find(params[:id])
   erb(:"gym_classes/edit_class")
@@ -30,14 +37,14 @@ post '/average_joes/gym_classes/completed' do
   erb(:"gym_classes/completed")
 end
 
-post '/average_joes/gym_classes/:id' do
-  @gym_class = GymClass.new(params)
-  @gym_class.update()
-  erb(:"gym_classes/updated_class")
-end
-
 post '/average_joes/gym_classes/:id/delete' do
   @gym_class = GymClass.find(params[:id])
   @gym_class.delete()
   redirect to('/average_joes/gym_classes/view_classes')
+end
+
+post '/average_joes/gym_classes/:id' do
+  @gym_class = GymClass.new(params)
+  @gym_class.update()
+  erb(:"gym_classes/updated_class")
 end

@@ -1,8 +1,15 @@
+
 <p>Class: <%= @gym_class.gym_class_type %></p>
 <p>Time: <%= @gym_class.class_time %></p>
 
-<form class="" action="/average_joes/gym_classes/<%= @gym_class.id %>/delete" method="post">
-<input type="submit" name="" value="Delete Class">
+<form class="btn_all" action="/average_joes/gym_classes/<%= @gym_class.id %>/delete" method="post">
+  <input type="submit" name="" value="Delete Class">
 </form>
 
-<a href="/average_joes/gym_classes/<%= @gym_class.id %>/edit_class"> Edit Class</a>
+<!-- <a href="/average_joes/gym_classes/<%= @gym_class.id %>/delete"> Delete Class</a> -->
+<br/>
+<a class="a_to_button" href="/average_joes/gym_classes/<%= @gym_class.id %>/edit_class"> Edit Class</a>
+<br/>
+<a class="a_to_button" href="/average_joes/gym_classes/<%= @gym_class.id %>/bookings"> View Bookings</a>
+<br/>
+<a class="a_to_button" href="/average_joes/bookings/<%= @gym_class.id %>/book_in"> Book Class</a>

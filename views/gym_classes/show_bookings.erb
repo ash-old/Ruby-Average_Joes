@@ -1,0 +1,13 @@
+
+<div class="bookings">
+
+
+<% for member in @members %>
+<br>
+<span><%= member.first_name %></span>
+<span><%= member.last_name %></span>
+<span></span><%= member.email %>
+<br>
+
+<%end%>
+</div>

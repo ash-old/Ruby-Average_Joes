@@ -1,15 +1,69 @@
+p {
+  font-family: Arial;
+}
+
+
+.created {
+  font-family: 'Oleo Script', cursive;
+  color: #e32636;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* displays table content heading */
+.table {
+  font-family: 'Oleo Script', cursive;
+  font-size: 30px;
+  color: #e32636
+}
+
 body {
-  background: #ffc40c url('/images/logo.png');
+  background: #ffc40c ;
   background-repeat: no-repeat;
+  background-image: url('/images/logo.png');
+  background-attachment: fixed;
+  background-position: center;
 }
 
-
-a {
-  font-family: Helvetica, sans-serif;
+/* Nav bar */
+nav {
+  width: 100%;
+  height: 75px;
+  background-color: white;
 }
 
-nav ul li {
-  display: flex;
+ul {
+ text-align: center;
+}
+
+ul li {
   display: inline-block;
-  padding: 30px;
+  justify-content:space-around;
+  line-height: 75px
+}
+
+ul li a {
+  font-size: 25px;
+  font-family: 'Oleo Script', cursive;
+  text-decoration: none;
+  padding: 0 20px;
+  color: #e32636;
+  display: block;
+}
+
+ul li a:hover {
+  color: #ffc40c;
+
+}
+
+/* forms */
+.form {
+  text-align: center;
+  padding-top: 65px;
+
+}
+
+.bookings {
+  font-family: Arial;
+
 }

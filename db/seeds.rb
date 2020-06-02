@@ -3,7 +3,7 @@ require_relative('../models/gym_class')
 require_relative('../models/booking')
 require('pry-byebug')
 
-
+Booking.delete_all()
 GymClass.delete_all()
 Member.delete_all()
 
@@ -25,9 +25,13 @@ gym_class2.save()
 gym_class3.save()
 gym_class4.save()
 
+booking1 = Booking.new({"member_id" => member1.id, "gym_class_id" => gym_class1.id})
+booking2 = Booking.new({"member_id" => member2.id, "gym_class_id" => gym_class1.id})
+booking3 = Booking.new({"member_id" => member3.id, "gym_class_id" => gym_class1.id})
 
-
-
+booking1.save()
+booking2.save()
+booking3.save()
 
 binding.pry
 nil

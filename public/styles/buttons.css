@@ -1,0 +1,53 @@
+.btn_all {
+  border:0px none;
+  border-radius: 3%;
+  padding: 0px 0px;
+  color: white;
+  cursor:pointer;
+  font-family: Arial;
+}
+
+.btn_all:hover {
+  color: rgba(255, 0, 0, 1);
+}
+
+.a_to_button {
+  display: block;
+  width: 80px;
+  height: 16px;
+  padding: 0px;
+  text-align: center;
+  border-radius: 5px;
+  color:black;
+  line-height: 16px;
+  background:white;
+  font-size: 8pt;
+  border: 0.5px solid darkgrey;
+}
+
+.a_to_button:hover {
+  color: rgba(255, 0, 0, 1)
+}
+
+.a_to_button_member {
+  display: block;
+  width: 95px;
+  height: 16px;
+  padding: 0px;
+  text-align: center;
+  border-radius: 5px;
+  color:black;
+  line-height: 16px;
+  background:white;
+  font-size: 8pt;
+  border: 0.5px solid darkgrey;
+}
+
+.a_to_button_member:hover {
+  color: rgba(255, 0, 0, 1)
+}
+
+a {
+  font-family: Arial;
+  text-decoration: none;
+}

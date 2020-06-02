@@ -1,0 +1,29 @@
+<form class="form" action="/average_joes/bookings/booked_class" method="post">
+
+  <label for="first-name">First Name:</label>
+  <select class="" name="member_id">
+    <% for member in @members %>
+    <option value="<%= member.id %>"><%= member.first_name %></option>
+    <% end %>
+  </select>
+
+
+  <label for="last-name">Last Name:</label>
+  <select class="" name="last_name">
+    <% for member in @members %>
+    <option value="<%= member.id %>"><%= member.last_name %></option>
+    <% end %>
+  </select>
+
+  <label for="gym-class">Class:</label>
+  <select class="" name="gym_class_id">
+    <% for gym in @gym_class %>
+    <option value="<%=gym.id%>"><%= gym.gym_class_type %></option>
+    <% end %>
+  </select>
+
+
+  <input type="submit" name="" value="Book">
+
+
+</form>
