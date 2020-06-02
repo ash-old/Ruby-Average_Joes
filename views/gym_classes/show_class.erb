@@ -1,0 +1,8 @@
+<p>Class: <%= @gym_class.gym_class_type %></p>
+<p>Time: <%= @gym_class.class_time %></p>
+
+<form class="" action="/average_joes/gym_classes/<%= @gym_class.id %>/delete" method="post">
+<input type="submit" name="" value="Delete Class">
+</form>
+
+<a href="/average_joes/gym_classes/<%= @gym_class.id %>/edit_class"> Edit Class</a>
