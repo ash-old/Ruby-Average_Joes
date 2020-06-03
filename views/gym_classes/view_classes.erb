@@ -1,12 +1,14 @@
 <p class="table">Classes:</p>
 <% for gym in @gym_class %>
+<div class="box">
 
-<p>Gym Class: <%= gym.gym_class_type() %></p>
-<p>Time: <%= gym.class_time() %></p>
+  <p>Gym Class: <%= gym.gym_class_type() %></p>
+  <p>Time: <%= gym.class_time() %></p>
 
-<form class="" action="/average_joes/gym_classes/<%=gym.id%>" method="get">
-  <input type="submit" name="" value="View Class">
-</form>
-<br/>
+  <form class="" action="/average_joes/gym_classes/<%=gym.id%>" method="get">
+    <input type="submit" name="" value="View Class">
+  </form>
+  <br/>
 
 <%end%>
+</div>

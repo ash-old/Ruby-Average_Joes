@@ -1,9 +1,12 @@
-<p>First Name: <%= @member.first_name %></p>
-<p>Last Name: <%= @member.last_name %></p>
-<p>Email: <%= @member.email %></p>
+<div class="box2">
 
-<form class="" action="/average_joes/<%=@member.id%>/delete" method="post">
-  <input type="submit" name="" value="Delete Member">
-</form>
-<br/>
-<a class="a_to_button_member" href="/average_joes/<%=@member.id%>/edit">Edit Member</a>
+  <p>First Name: <%= @member.first_name %></p>
+  <p>Last Name: <%= @member.last_name %></p>
+  <p>Email: <%= @member.email %></p>
+
+  <form class="" action="/average_joes/<%=@member.id%>/delete" method="post">
+    <input type="submit" name="" value="Delete Member">
+  </form>
+  <br/>
+  <a class="a_to_button_member" href="/average_joes/<%=@member.id%>/edit">Edit Member</a>
+</div>

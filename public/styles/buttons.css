@@ -1,3 +1,4 @@
+/* post data button */
 .btn_all {
   border:0px none;
   border-radius: 3%;
@@ -11,6 +12,7 @@
   color: rgba(255, 0, 0, 1);
 }
 
+/* anchor to button */
 .a_to_button {
   display: block;
   width: 80px;

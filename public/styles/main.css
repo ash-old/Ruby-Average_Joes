@@ -1,8 +1,9 @@
+/* form data */
 p {
   font-family: Arial;
 }
 
-
+/* created pages */
 .created {
   font-family: 'Oleo Script', cursive;
   color: #e32636;
@@ -17,6 +18,7 @@ p {
   color: #e32636
 }
 
+/* main body */
 body {
   background: #ffc40c ;
   background-repeat: no-repeat;
@@ -53,17 +55,40 @@ ul li a {
 
 ul li a:hover {
   color: #ffc40c;
-
 }
 
 /* forms */
 .form {
   text-align: center;
   padding-top: 65px;
-
 }
 
 .bookings {
   font-family: Arial;
+}
 
+/* view members box */
+.box {
+  width: 220px;
+  height: 110px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1px;
+}
+
+/* show member box */
+.box2 {
+  margin-top: 40px;
+  width: 220px;
+  height: 190px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1px;
+}
+
+/* show gym class box */
+.box3 {
+  margin-top: 40px;
+  width: 200px;
+  height: 225px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1px;
 }

@@ -1,13 +1,13 @@
 <p class="table">Members:</p>
 
-<br/>
-
 <% for member in @members %>
-<p>Name: <%= member.first_name()%> <%= member.last_name() %></p>
-<p>Email: <%= member.email() %></p>
+<div class="box">
+  <p>Name: <%= member.first_name()%> <%= member.last_name() %></p>
+  <p>Email: <%= member.email() %></p>
 
-<form class="" action="/average_joes/<%=member.id%>" method="get">
-  <input type="submit" name="" value="View Member">
-</form>
-<br/>
+  <form class="" action="/average_joes/<%=member.id%>" method="get">
+    <input type="submit" name="" value="View Member">
+  </form>
+  <br/>
 <% end %>
+</div>
